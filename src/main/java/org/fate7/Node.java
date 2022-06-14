@@ -6,7 +6,6 @@ public class Node {
     private Node rightChild;
 
     Node(){
-        this.value = Integer.MIN_VALUE;
     }
 
     Node(int val) {
