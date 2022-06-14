@@ -5,7 +5,9 @@ public class Node {
     private Node leftChild;
     private Node rightChild;
 
-    Node(){}
+    Node(){
+        this.value = Integer.MIN_VALUE;
+    }
 
     Node(int val) {
         this.value = val;

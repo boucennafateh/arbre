@@ -5,7 +5,7 @@ public class ParcourirArbre {
     //solution itérative
     public int findMax(Node root) {
         if(root == null)
-            return 0;
+            return Integer.MIN_VALUE;
         else
             return Math.max(
                     root.getValue(),
@@ -19,11 +19,11 @@ public class ParcourirArbre {
     }
 
     public static void main(String[] args) {
-        Node node = new Node(15,
-                new Node(-12, new Node(3), new Node(19)),
-                new Node(11, new Node(-8), new Node(7,
-                        new Node(11),
-                        new Node(3, new Node(-2), new Node())))
+        Node node = new Node(-15,
+                new Node(-12, new Node(-3), new Node(-19)),
+                new Node(-11, new Node(-8), new Node(-7,
+                        new Node(-11),
+                        new Node(-3, new Node(-2), new Node())))
         );
         ParcourirArbre parcourirArbre = new ParcourirArbre();
         int ans = parcourirArbre.findMax(node);
