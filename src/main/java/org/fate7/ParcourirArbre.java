@@ -23,7 +23,7 @@ public class ParcourirArbre {
                 new Node(-12, new Node(-3), new Node(-19)),
                 new Node(-11, new Node(-8), new Node(-7,
                         new Node(-11),
-                        new Node(-3, new Node(-2), new Node())))
+                        new Node(-3, new Node(-2), null)))
         );
         ParcourirArbre parcourirArbre = new ParcourirArbre();
         int ans = parcourirArbre.findMax(node);
